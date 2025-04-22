@@ -1,32 +1,85 @@
 *{
-    margin: 0;
+    margin: 0;  /* Ajustes generales */
     padding: 0;
-    text-align: center;
-    outline: solid 1px red;
+    /* text-align: center;  
+    outline: solid 1px red; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
+.container{
+    display: flex;  /* Ajustes del container principal */
+    flex-flow: row;
 }
 .part-left{
-    max-width: 500px;
-    padding: 30px;
-    flex: 1;
+    max-width: 400px;   /* Ajustes de la parte izquierda */
+    padding: 50px;
+}
+.part-right{
+    margin: 0 auto; /* Ajustes de la parte derecha */
+    padding: 20px;
+    text-align: center;
+}
+.title{
+    font-size: 25px; /* Tamaño del titulo de la parte izquierda */
+}
+.title-right{
+    font-size: 30px;    /* Tamaño del titulo de la parte derecha */
+}
+.a-First{
+    color: #cfddd7; /* Color del primer hipervínculo de la parte izquierda */
+}
+.important, .contact{
+    display: flex;
+    flex-flow: column wrap; /* Ajustes en la parte izquierda */
+    gap: 25px
+}
+a{
+    text-decoration: none; /* Color de todos los hipervínculos */
+    color: black;
 }
 .icon{
-    height: 12px;
+    height: 12px; /* Altura y ancho de los iconos */
+    width: 12px;
+}
+.image{
+    height: 450px; /* Altura y ancho de las imagenes */
+    width: 300px;
 }
 .nav-container{
-    display: flex;
+    display: flex;  /* Ajustes de la parte izquierda */
     flex-flow: column wrap;
-    gap: 70px
+    gap: 60px;
 }
 .icons{
-    display: flex;
+    display: flex;  /* Alineando los iconos */
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+.nav-item{
+    display: flex;  /* Alineando los elementos de la parte izquierda */
+    flex-flow: column wrap;
+    gap: 80px;
+}
+.container-right{
+    display: flex;  /* Alineando los elementos de la parte derecha */
+    flex-flow: column wrap;
+    gap: 40px;
+}
+.container-left{
+    display:flex ; /* Ajustes en el contenedor derecho */
+    flex-flow: column wrap;
+    gap: 300px;
+}
+.img-container{
+    display: flex;
+    justify-content: space-around;  /* Ajustes del contenedor de las imagenes */
+    gap: 35px;
+    background-color: #c0d2cc;
+    padding: 50px
+}
+.part-bottom{
+    display: flex;  /* Ajustes de la parte baja de la izquierda */
+    flex-flow: column wrap;
     gap: 20px;
 }
