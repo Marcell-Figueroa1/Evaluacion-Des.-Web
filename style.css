@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    outline: solid 1px red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+.part-left{
+    max-width: 500px;
+    padding: 30px;
+    flex: 1;
+}
+.icon{
+    height: 12px;
+}
+.nav-container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 70px
+}
+.icons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
